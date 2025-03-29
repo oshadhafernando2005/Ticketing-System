@@ -1,0 +1,84 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping items to the next row */
+    justify-content: space-around; /* Spacing between widgets */
+    align-items: flex-start; /* Align items at the top */
+    gap: 100px; /* Adds space between rows and columns */
+    padding: 200px;
+    background-color: #f9f9f9; /* Optional: Background color for dashboard */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for dashboard */
+  }
+  
+  /* Styling for individual widgets */
+  .dashboard-container > * {
+    flex: 1 1 calc(50% - 10px); /* Take 50% of the width minus the gap */
+    max-width: calc(50% - 10px); /* Ensure consistent width for widgets */
+  }
+  .dashboard-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap widgets into rows */
+    gap: 10px; /* Reduce both row and column spacing */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Width of the container */
+    margin: 0 auto; 
+    margin-left: 250px;
+    margin-top: 00px;/* Center the container */
+  }
+  :host {
+    display: block;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and button */
+  }
+  
+  img {
+    width: 150px;
+    height: 350px;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
+  }
+  
+  .layout-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the image and widgets */
+    padding: 20px;
+  }
+  
+  .image-container {
+    flex: 0 0 150px; /* Fixed width for the image container */
+    margin-left: 200px;
+  }
+  
+  .image-container img {
+    width: 220%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
+  }
+  
+  .widgets-container {
+    flex: 1; /* Take the remaining space for widgets */
+    display: flex;
+    flex-wrap: wrap; /* Wrap widgets into rows */
+    gap: 10px; /* Space between widgets */
+  }
+
+  
+  
+
+  
+  
+  
+  

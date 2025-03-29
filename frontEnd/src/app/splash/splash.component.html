@@ -1,0 +1,11 @@
+<div *ngIf="showHeader; else mainContent">
+    <h1>Oshadha</h1>
+  </div>
+  
+  <ng-template #mainContent>
+    <app-left-sidebar [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"(changeIsLeftSidebarCollapsed)="changeIsLeftSidebarCollapsed($event)"></app-left-sidebar>
+    <router-outlet/>
+    <app-main [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+    [screenWidth]="screenWidth()"></app-main>
+  </ng-template>
+  

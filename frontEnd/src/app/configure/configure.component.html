@@ -1,0 +1,59 @@
+<div class="create-event-form">
+    <h2>Create Event</h2>
+    <form (ngSubmit)="passInput()" >
+      <!-- Event Name -->
+      <div class="form-group">
+        <label for="name">Event Name:</label>
+        <input
+          type="text"
+          [(ngModel)]="event.eventName"
+          id="eventName" name="eventName"
+          placeholder="Enter event name"
+          required
+        />
+      </div>
+  
+      <!-- Event Type -->
+      <div class="form-group">
+        <label for="type">Event Type:</label>
+        <select
+        [(ngModel)]="event.eventType"
+          id="eventType" name="eventType"required
+        >
+          <option value="">Select type</option>
+          <option value="concert">Concert</option>
+          <option value="conference">Conference</option>
+          <option value="workshop">Workshop</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <!-- Total Tickets -->
+     
+  
+      <!-- Max Tickets -->
+      <div class="form-group">
+        <label for="maxTickets">Max Tickets:</label>
+        <input type="number" [(ngModel)]="event.maxTicket" id="maxTicket" name="maxTicket" placeholder="Enter max tickets" required
+        />
+      </div>
+  
+      <!-- Receive Rate -->
+      <div class="form-group">
+        <label for="receiveRate">Receive Rate:</label>
+        <input type="number" [(ngModel)]="event.receiveRate" id="receiveRate" name="receiveRate" placeholder="Enter receive rate" step="0.01" required
+        />
+      </div>
+  
+      <!-- Retrieve Rate -->
+      <div class="form-group">
+        <label for="retrieveRate">Retrieve Rate:</label>
+        <input type="number" [(ngModel)]="event.retrieveRate" id="retrieveRate" name="retrieveRate" placeholder="Enter retrieve rate" step="0.01" required
+        />
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+  
